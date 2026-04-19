@@ -44,8 +44,11 @@ nav.scrolled{height:60px;box-shadow:0 2px 24px rgba(44,26,14,0.06)}
   transition:background 0.2s;
 }
 .nav-logo-wrap:hover{background:var(--terra)}
-.nav-logo-wrap img{
-  height:32px;width:auto;display:block;
+.nav-logo-wrap span{
+  font-family:var(--serif);
+  font-size:1.5rem;
+  font-weight:700;
+  color:var(--cream);
 }
 .nav-toggle{
   display:none;
@@ -454,19 +457,28 @@ footer{background:var(--brown);padding:3rem 3.5rem 2rem;margin-top:0}
 <body>
 
 <!-- NAVBAR -->
-<nav id="nav">
-  <a class="nav-logo-wrap" href="#" aria-label="Brott Home">
-    <img src="images/brott_logo_transparent.png" alt="">  </a>
-  <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+<nav id="navbar">
+
+  <!-- LOGO -->
+<a href="index.html" class="nav-logo-wrap">
+  <img src="images/brott_logo_transparent.png" alt="Brott Logo" style="height:40px; width:auto; display:block;">
+</a>
+
+  <!-- HAMBURGER -->
+  <button class="nav-toggle" id="navToggle">
     <span></span>
   </button>
-  <ul id="nav-menu" class="nav-links">
-    <li><a href="index.html#home">Home</a></li>
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="index.html#gallery">Gallery</a></li>
-    <li><a href="tel:+917996866066" class="nav-cta">Reserve</a></li>
+
+  <!-- LINKS -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#specials">Specials</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="index.html#story">Our Story</a></li>
+    <li><a href="index.html#location">Visit Us</a></li>
+    <li><a href="#" class="nav-cta">Reserve</a></li>
   </ul>
+
+
 </nav>
 
 <!-- MENU HERO -->
