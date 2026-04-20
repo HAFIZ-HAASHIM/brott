@@ -226,7 +226,7 @@ nav.scrolled{
   font-weight:400;
   letter-spacing:0.1em;
   text-transform:uppercase;
-  color:white;
+  color:var(--brown);
   text-decoration:none;
   transition:color 0.2s;
 }
